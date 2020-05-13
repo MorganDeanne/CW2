@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta name ="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MorganCallaghan23902841</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form name="login">
+    <label>Username</label>
+    <input type="text" name="username"/><br/>
+    <label>Password</label>
+    <input type="password" name="password"/><br />
+    <input type="button" onclick="check(this.form)" value="Login"/>
+    <input type="reset" value="Cancel"/>
+  </form>
+  <script language="javascript">
+  function check(form)/*function to check userid & password*/
+  {
+ /*the following code checkes whether the entered userid and password are matching*/
+  if(form.username.value == "a" && form.password.value == "a")
+    {
+      window.open('academic.html')/*opens the target page while Id & password matches*/
+    }
+    else if (form.username.value == "b" && form.password.value == "b") {
+      window.open('hod.html')
+    }
+    else {
+      alert("Error Password or Username")/*displays error message*/
+    }
+  }
+  </script>
+
+</body>
+</html>
+
+
+
+
+  <!-- <header>
+    <h1>Web Application Development Course Work-2 </h1>
+    <button id ="btn">Fetch information about the modules</button>
+  </header>
+
+  <div id="module-info"></div>
+
+  <script src="main.js"></script>
+</body>
+</html> -->
